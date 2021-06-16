@@ -4,7 +4,7 @@ import QuestionCard from './components/QuestionCard.component';
 
 import { Difficulty, fetchQuizQuestion, QuestionState } from './API';
 
-type AnwerObject = {
+export type AnswerObject = {
   question: string;
   answer: string;
   correct: boolean;
@@ -16,7 +16,7 @@ const App = () => {
   const [loading, setLoading] = useState(false);
   const [questions, setQuestions] = useState<QuestionState[]>([]);
   const [number, setNumber] = useState(0);
-  const [userAnswers, setUserAnswers] = useState<AnwerObject[]>([]);
+  const [userAnswers, setUserAnswers] = useState<AnswerObject[]>([]);
   const [scrore, setScrore] = useState(0);
   const [gameOver, setGameOver] = useState(true);
 
