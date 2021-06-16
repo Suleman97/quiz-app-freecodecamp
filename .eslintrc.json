@@ -1,0 +1,49 @@
+{
+  "env": {
+    "jest": true,
+    "browser": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "airbnb",
+    "airbnb/hooks",
+    "prettier",
+    "prettier/react"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": false
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module",
+    "project": "./jsconfig.json"
+  },
+  "plugins": ["react", "react-hooks", "jsx-a11y", "import", "prettier"],
+  "rules": {
+    "react/react-in-jsx-scope": 0,
+    "import/prefer-default-export": 0,
+    "jsx-a11y/media-has-caption": 0,
+    "react/require-default-props": 0,
+    "react/display-name": 0,
+    "react/prop-types": 0,
+    "react/jsx-props-no-spreading": 0,
+    "prefer-promise-reject-errors": 0,
+    "no-param-reassign": 0,
+    "dot-notation": 0,
+    "no-tabs": 2,
+    "no-unused-vars": "warn"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".tsx"],
+        "moduleDirectory": ["node_modules", "src"]
+      }
+    }
+  }
+}
